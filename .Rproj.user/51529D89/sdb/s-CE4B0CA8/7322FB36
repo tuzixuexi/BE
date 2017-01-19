@@ -1,0 +1,17 @@
+{
+    "contents" : "BEFDR <- function(minimal.lm, maximal.lm, FDR.q, mfactor=1){\n  #This function remains the same for FS & BE\n  compute.Lambda<-function(k, m, Q) {i<-c(1:k)\n  return( (1/(k+1)) * sum(qnorm((Q/2) * (i/(m+1-i*(1-Q))))^2))  }\n\n  #This function remains the same for FS & BE\n  get.model.size <- function(a.lm) {require(MASS);\n    return(extractAIC(a.lm)[1]-1) }\n\n  require(MASS);\n\n  #Scope remains the same for FS & BE\n  the.scope <- list(lower = minimal.lm, upper = maximal.lm)\n  # Size of maximal.lm multiplied by mfactor\n  # as BE procedure is initiated when 1/mfactor of all the genotyped regions are already removed\n  # need to correct for all the tests that are actually performed when building\n  # the final model\n  m <- mfactor*get.model.size(maximal.lm)\n  new.model.size <- get.model.size(maximal.lm)\n  for (i in 1:m)\n  {\n    #test i <- 3\n    old.model.size <- new.model.size\n    Lambda <- compute.Lambda(k = old.model.size-1, m, Q = FDR.q)\n\n    new.model <- stepAIC(maximal.lm, direction=\"backward\", scope=the.scope, k=Lambda, trace=FALSE)\n    new.model.size <- get.model.size(new.model);\n\n    if (new.model.size >= old.model.size) break;\n  }\n  new.lm <- lm(new.model)\n  return(new.lm) }\n",
+    "created" : 1484819622262.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "195172659",
+    "id" : "7322FB36",
+    "lastKnownWriteTime" : 1484822756,
+    "path" : "~/Documents/chicken/BE/R/BEFDR.R",
+    "project_path" : "R/BEFDR.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

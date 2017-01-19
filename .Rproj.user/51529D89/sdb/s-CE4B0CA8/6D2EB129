@@ -1,0 +1,18 @@
+{
+    "contents" : "\\name{Chicken.rda}\n\\alias{Chicken.rda}\n\\docType{data}\n\\title{\nSample data to run BEFDR\n}\n\\description{\nExample data needed to run function BEFDR function\n\n}\n\\usage{data(\"Chicken\")}\n\\format{\n  A .RData object contains several vecotrs and data.frames\n  \\describe{\n    \\item{\\code{sigMrk}}{ a vector of SNPs that captures the polygenic backgroud, so I would like to keep them as fixed effect, which means they will be kept in the minimal model}\n    \\item{\\code{mrksT}}{a  set of markers I want to do BE on}\n    \\item{\\code{mrk_geno}}{ is a genotype matrix}\n    \\item{\\code{phe}}{ a vector contains phenotype}\n    \\item{\\code{phe}}{ fx1 is a vector contains sex}\n    \\item{\\code{mrk_info}}{ a matrix contains the name and location of all the marker}\n\n\n  }\n}\n\\details{\n%%  ~~ If necessary, more details than the __description__ above ~~\n}\n\\source{\nA complex multi-locus, multi-allelic genetic architecture underlying the long-term selection-response in the Virginia body weight line of chickens (In prepartion)\n}\n\\references{\nSheng Z, Pettersson ME, Honaker CF, Siegel PB, Carlborg Ö. 2015. Standing genetic variation as a major contributor to adaptation in the Virginia chicken lines selection experiment. Genome Biol 16: 219.\n\nA complex multi-locus, multi-allelic genetic architecture underlying the long-term selection-response in the Virginia body weight line of chickens (In prepartion)\n\n}\n\\examples{\ndata(Chicken.RData)\n}\n\\keyword{datasets}\n",
+    "created" : 1484823733260.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4161376003",
+    "id" : "6D2EB129",
+    "lastKnownWriteTime" : 1484826398,
+    "path" : "~/Documents/chicken/BE/man/Chicken.Rd",
+    "project_path" : "man/Chicken.Rd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_doc"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: BE\nType: Package\nTitle: Implementation of backward elimination in multi-locus association analysis.\nVersion: 0.1.0\nDate: 2017-01-19\nAuthor: Yanjun Zan\nMaintainer: Yanjun Zan <yanjunzan@gmail.com>\nDescription: Given a set of SNPs and a phenotype,  this packages fit a multi-locus model and doing backward elimination based on a adaptive FDR.\nLicense: GPL(>=2)\nLazyData: TRUE\nLazyLoad: yes\nDepends: R (>= 3.1.0)\nSuggests: MASS\n",
+    "created" : 1484819015150.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1588824953",
+    "id" : "3916F464",
+    "lastKnownWriteTime" : 1484826102,
+    "path" : "~/Documents/chicken/BE/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}
