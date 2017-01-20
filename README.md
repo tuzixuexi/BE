@@ -1,5 +1,5 @@
 # BE
-This is a R package developed for multi-locus association analysis using a backward elimination approach. It employs an adaptive FDR to adapt the flexiable model size.More details can be viewed in the reference.
+This is a R package developed for multi-locus association analysis using a backward elimination approach. It employs an adaptive FDR to accomodate the flexiable model size.More details can be viewed in the reference.
 
 INSTALLATION:
 
